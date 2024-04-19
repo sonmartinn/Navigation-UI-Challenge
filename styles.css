@@ -1,0 +1,141 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+body{
+    background-color: red;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin: 10% auto;
+    width: 90%;
+    padding:10px;
+    background-color: white;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 25px;
+}
+#logo{
+    width: 20%;
+}
+.menu{
+    width: 60%;
+    /* margin-left: -100px; */
+}
+.menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.menu-list li{
+    font-size: 25px;
+    padding: 9px;
+    margin-right: 35px;
+}
+.menu-list li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.login{
+    width: 20%;
+    text-align: center;
+}
+.login button{
+    font-size: 25px;
+    margin-right: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+.login .sign-in{
+    background-color: white;
+}
+.login .sign-in:hover{
+    background-color: #Dcd7d7;
+}
+.login .sign-up{
+    color: white;
+    background-color: red;
+}
+.login .sign-up:hover{
+    background-color: #F65353;
+}
+li .dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown .arrow-down{
+    display: none;
+}
+.dropdown:hover .arrow-down{
+    display: inline;
+}
+.dropdown:hover .arrow-up{
+    display: none;
+}
+.dropdown-content{
+    width: auto;
+    max-height: 300px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: white;
+    padding: 5px 18px;
+    border-radius: 15px;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdown-content button img{
+    width: 48px;
+    height: 48px;
+}
+.dropdown-content button{
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.dropdown-content button:hover{
+    background-color: #Dcd7d7;
+}
+.dropdown-content button:hover::after{
+    content: url("images/icons8-right-arrow-16.png");
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.dropdown-content .items-info{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.dropdown-content .items-info strong{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.dropdown-content .items-info p{
+    margin: 0;
+    padding: 0;
+}
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+.dropdown-content .triangle {
+    border-left: 18px solid transparent; /* Độ dài cạnh tam giác */
+    border-right: 18px solid transparent; /* Độ dài cạnh tam giác */
+    border-bottom: 25px solid white; /* Độ dài cạnh tam giác (sqrt(3)/2 * 100) */
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}

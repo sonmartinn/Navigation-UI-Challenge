@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navigation UI</title>
+</head>
+<body>
+    <div class="nav">
+        <img id="logo" src="images\Technova-Industries-Web-Master-Logo.png" alt="Technova_logo" width="210px" weight="auto">
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="dropdown">
+                    <img class="arrow-up" src="images\icons8-back-50.png" alt="icons" width="15px" height="15px">
+                    <img class="arrow-down" src="images\icons8-back-bottom-50.png" alt="icons" width="15px" height="15px">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Product</a>
+                    <div class="dropdown-content">
+                        <div class="triangle"></div>
+                        <button>
+                            <img src="images\icons8-product-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Product 1</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-product-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Product 2</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-product-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Product 3</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </button>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <img class="arrow-up" src="images\icons8-back-50.png" alt="icons" width="15px" height="15px">
+                    <img class="arrow-down" src="images\icons8-back-bottom-50.png" alt="icons" width="15px" height="15px">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Services</a>
+                    <div class="dropdown-content">
+                        <div class="triangle"></div>
+                        <button>
+                            <img src="images\icons8-web-development-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Web Development</strong>
+                                <p>Building dynamic websites for your success</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-mobile-app-development-64.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Mobile App Development</strong>
+                                <p>Crafting impactful mobile solutions</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-window-settings-50.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Software Development</strong>
+                                <p>Creating tailored software solutions</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-upload-to-cloud-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Cloud Solutions</strong>
+                                <p>Unlocking cloud potential for businesses</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-cyber-security-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Cybersecurity Services</strong>
+                                <p>Protecting your digital realm</p>
+                            </div>
+                        </button>
+                        <button>
+                            <img src="images\icons8-data-analytics-48.png" alt="icons">
+                            <div class="items-info">
+                                <strong>Data Analytics</strong>
+                                <p>Unleashing insights from your data</p>
+                            </div>
+                        </button>
+                    </div>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#carrers">Carrers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
