@@ -8,8 +8,10 @@ body{
 .nav{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 10% auto;
     width: 90%;
+    height: auto;
     padding:10px;
     background-color: white;
     justify-content: space-between; 
@@ -27,9 +29,10 @@ body{
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .menu-list li{
-    font-size: 25px;
+    font-size: 1.7rem;
     padding: 9px;
     margin-right: 35px;
 }
@@ -43,7 +46,7 @@ body{
     text-align: center;
 }
 .login button{
-    font-size: 25px;
+    font-size: 1.7rem;
     margin-right: 10px;
     padding: 15px;
     border: none;
@@ -118,6 +121,7 @@ li .dropdown{
     margin-left: 10px;
     margin-top: 5px;
     flex-direction: column;
+    font-size: 1.0rem;
 }
 .dropdown-content .items-info strong{
     margin: 0;
@@ -138,4 +142,43 @@ li .dropdown{
     position: absolute;
     left: 10px;
     top: -20px;
+}
+ /* for tablets screen */
+@media only screen and (max-width: 768px) {
+    .menu-list li{
+        font-size: 1.0rem;
+    }
+    .dropdown-content button img{
+        width: 40px;
+        height: 40px;
+    }
+    .dropdown-content .items-info{
+        font-size: 0.7rem;
+    }
+    .login button{
+        font-size: 0.9rem;
+    }
+}
+/* for phones screen */
+@media only screen and (max-width: 600px) {
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-list{
+        flex-direction: column;
+    }
+    .menu-list li{
+        font-size: 0.4rem;
+    }
+    .dropdown-content button img{
+        width: 20px;
+        height: 20px;
+    }
+    .dropdown-content .items-info{
+        font-size: 0.3rem;
+    }
+    .login button{
+        font-size: 0.4rem;
+    }
 }
