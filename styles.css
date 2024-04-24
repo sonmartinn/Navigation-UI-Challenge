@@ -164,12 +164,32 @@ li .dropdown{
     .nav{
         flex-direction: column;
         justify-content: center;
+        width: 15%;
+        height: 90%;
+        float: left;
+    }
+    #logo{
+        width: 100%;
+        height: auto;
     }
     .menu-list{
-        flex-direction: column;
+        flex-direction: row;
+        margin-left: -50px;
     }
     .menu-list li{
         font-size: 0.4rem;
+        padding: 5px;
+    }
+    .menu-list li{
+        width: 100%;
+    }
+    .dropdown > img{
+        width: 5px;
+        height: 5px;
+    }
+    .dropdown-content{
+        margin-top: 20px;
+        margin-left: 13px;
     }
     .dropdown-content button img{
         width: 20px;
@@ -178,7 +198,11 @@ li .dropdown{
     .dropdown-content .items-info{
         font-size: 0.3rem;
     }
+    .login{
+        width: 100%;
+    }
     .login button{
         font-size: 0.4rem;
+        padding: 5px;
     }
 }
